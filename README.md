@@ -1,7 +1,11 @@
 # HackSussex25
 
-Formatting of our structure:
+<h2>Requirements</h2>
+<ul>
+  <li>Please have the MetaMask Chrome extension installed and ready to use with Flare Coston Testnet</li>
+  <li>Please run the webpage from http server locally, as just viewing the static HTML will not allow the MetaMask integration</li>
+  <li>Our design is not entirely finished, but most functionality has been implemented.</li>
+  <li>Feel free to play around and see what you could do with our project.</li>
+</ul>
 
-COMPOSITE_KEY "${firstname}${lastname}${dateofbirth}${nationalinsurance}" -> gets hashed using SHA-256 algorithm!
-
-Then, COMPOSITE_KEY along with CarReg is sent to the Smart Contract for either initial adding to the system OR verification / updating of user data.
+<p>Designed by Adhiti Rajesh & Joseph Yewlett at Hack Sussex 2025</p>
