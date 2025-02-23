@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherDrive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" defer></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    
+    <div class="bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center text-blue-400">AetherDrive</h1>
+        <p class="text-gray-400 text-center mt-2">
+            Start your blockchain insurance footprint today, logging your driving records securely. <br> 
+            <span class="text-blue-300 italic">Powered by Flare.</span>
+        </p>
+
+        <hr class="my-6 border-gray-600">
+
+        <!-- Parent div to space buttons evenly -->
+        <div class="flex flex-col space-y-4">
+            
+            <button type="button" onclick="window.location.href='index.html';" id="logInButton" 
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-md transition flex justify-center">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-lock"></i>
+                    <span>Log in with credentials</span>
+                </div>
+            </button>
+
+            <button type="button" onclick="window.location.href='create_account.html';" id="createAccountButton" 
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md transition flex justify-center">
+                <div class="flex items-center gap-3">
+                    <i class="fa-brands fa-ethereum"></i>
+                    <span>Create account</span>
+                </div>
+            </button>
+
+            <button type="button" onclick="window.location.href='driver_score.html';" id="updateDrivingScoreButton" 
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-md transition flex justify-center">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-cloud-upload"></i>
+                    <span>Update driving score</span>
+                </div>
+            </button>
+
+            <button type="button" onclick="window.location.href='view_driver_stats.html';" id="reviewNegativeScoreButton" 
+                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-md transition flex justify-center">
+                <div class="flex items-center gap-3">
+                    <i class="fa fa-file-alt"></i>
+                    <span>Review driving scores</span>
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

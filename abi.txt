@@ -1,0 +1,326 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "key",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "carr",
+				"type": "string"
+			}
+		],
+		"name": "registerDriver",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "usrId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "safety",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "brake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "reason",
+				"type": "string"
+			}
+		],
+		"name": "saveUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "usrId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "carReg",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "datasafety",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "databrake",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dataspeed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "datareason",
+				"type": "string"
+			}
+		],
+		"name": "updateCarinfo",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "claimhistory",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "claims",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "driver",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "accidentDetails",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "claimAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isApproved",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isProcessed",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "userID",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "verified",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "safetyscore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "brakescore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speedscore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "reasoning",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "userRegister",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "carReg",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "hashkey",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "inputkey",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "carReg",
+				"type": "string"
+			}
+		],
+		"name": "verifyUser",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "inputKey",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "usrId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "inputCarReg",
+				"type": "string"
+			}
+		],
+		"name": "viewStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

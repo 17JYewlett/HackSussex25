@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AetherDrive Blockchain Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen">
+    <!-- Centered Large Title -->
+    <h1 class="text-5xl text-center font-bold mb-8" style="color: turquoise; font-family: 'Times New Roman', serif;">
+        Set Driver Score
+    </h1>
+
+    <div class="bg-gray-800 p-8 rounded-xl shadow-lg max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center text-blue-400">AetherDrive</h1>
+        <div class="space-y-4 mt-4">
+            <input id="firstName" placeholder="First Name" class="w-full p-2 bg-gray-700 rounded">
+            <input id="lastName" placeholder="Last Name" class="w-full p-2 bg-gray-700 rounded">
+            <input id="carReg" placeholder="Car Registration" class="w-full p-2 bg-gray-700 rounded">
+            <input id="dateOfBirth" placeholder="Date of Birth" class="w-full p-2 bg-gray-700 rounded" type="date">
+            <input id="nationalInsurance" placeholder="National Insurance" class="w-full p-2 bg-gray-700 rounded">
+            <input id="safetyScore" placeholder="Safety Score" class="w-full p-2 bg-gray-700 rounded">
+            <input id="brakeScore" placeholder="Brake Score" class="w-full p-2 bg-gray-700 rounded">
+            <input id="speedScore" placeholder="Speed Score" class="w-full p-2 bg-gray-700 rounded">
+            <input id="reasoning" placeholder="Reasoning (leave empty if you want generative AI feedback)" class="w-full p-2 bg-gray-700 rounded">
+            <button id="registerBtn" class="w-full bg-blue-500 py-2 rounded hover:bg-blue-600" onclick="registerDriver()">
+                Log Driver Score
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
+<!--
+<script>
+    async function registerDriver() {
+        if (!window.ethereum) {
+            alert("MetaMask is not installed!");
+            return;
+        }
+
+        try {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            await provider.send("eth_requestAccounts", []);
+
+            const signer = provider.getSigner();
+            const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const carReg = document.getElementById("carReg").value;
+            const nationalInsurance = document.getElementById("nationalInsurance").value;
+
+            const tx = await contract.registerDriver(firstName, lastName, carReg, nationalInsurance);
+            alert("Transaction sent! Waiting for confirmation...");
+            await tx.wait();
+            alert("Successfully registered your data on Flare blockchain!");
+
+        } catch (error) {
+            console.error(error);
+            alert("Transaction failed. Check console for details.");
+        }
+    }
+
+    document.getElementById("registerBtn").onclick = registerDriver;
+    console.log("Ethereum object:", window.ethereum);
+</script>
+  -->
+
+</body>
+</html>
